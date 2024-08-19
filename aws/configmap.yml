@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  restaurantdb_url: jdbc:mysql://mysql-db-instance.ctg62sasqf9l.eu-west-2.rds.amazonaws.com:3306/restaurant_db
+  foodcataloguedb_url: jdbc:mysql://mysql-db-instance.ctg62sasqf9l.eu-west-2.rds.amazonaws.com:3306/food_catalogue_db
+  userdb_url: jdbc:mysql://mysql-db-instance.ctg62sasqf9l.eu-west-2.rds.amazonaws.com:3306/userinfo_db
+  orderdb_url: mongodb+srv://root:root@raghuveer-learning.xtgznpt.mongodb.net/
+  eureka_service_address: http://eureka-0.eureka-service:8761/eureka
+  mysql_dialect: org.hibernate.dialect.MySQL8Dialect
+
+  # restaurantdb: restaurantdb
+  # mysql-server: mysql-service    # The name of mysql service
+  # mysql-user-username: root
+  # citizen_database_url: jdbc:mysql://mysql-service:3306/citizendb
+  # foodcataloguedb_url: jdbc:mysql://mysql-service:3306/foodcataloguedb
+  # userdb_url: jdbc:mysql://mysql-service:3306/userdb
+  # foodcataloguedb: foodcataloguedb
+  # userdb: userdb
